@@ -743,12 +743,12 @@ body.modal-locked .cart-bar-wrap{ display:block; }
    z-index:0 so the logo (z-index:1) overlaps them at the seam, and its rounded
    corners show flowing photo underneath instead of a gap. */
 .logo-filmstrip{
-  width:6rem;
+  width:8rem;
   overflow:hidden;
   position:relative;
   z-index:0;
 }
-@media (min-width:768px){ .logo-filmstrip{ width:8rem; } }
+@media (min-width:768px){ .logo-filmstrip{ width:11rem; } }
 .logo-filmstrip--left{ border-radius:1.5rem 0 0 1.5rem; }
 .logo-filmstrip--right{ border-radius:0 1.5rem 1.5rem 0; }
 .logo-filmstrip-track{
@@ -756,13 +756,13 @@ body.modal-locked .cart-bar-wrap{ display:block; }
   height:100%;
 }
 .logo-filmstrip-track img{
-  width:6rem;
+  width:8rem;
   height:100%;
   object-fit:cover;
   flex-shrink:0;
   filter:saturate(1.1) brightness(.85);
 }
-@media (min-width:768px){ .logo-filmstrip-track img{ width:8rem; } }
+@media (min-width:768px){ .logo-filmstrip-track img{ width:11rem; } }
 @media (prefers-reduced-motion: no-preference){
   .logo-filmstrip-track--left{ animation:filmstripLeft 11s linear infinite; }
   .logo-filmstrip-track--right{ animation:filmstripRight 11s linear infinite; }
