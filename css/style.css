@@ -739,11 +739,14 @@ body.modal-locked .cart-bar-wrap{ display:block; }
   }
 }
 
-/* Filmstrips either side of the logo — small kabinet photos slowly sliding through */
+/* Filmstrips either side of the logo — small kabinet photos slowly sliding through.
+   z-index:0 so the logo (z-index:1) overlaps them at the seam, and its rounded
+   corners show flowing photo underneath instead of a gap. */
 .logo-filmstrip{
   width:6rem;
   overflow:hidden;
   position:relative;
+  z-index:0;
 }
 @media (min-width:768px){ .logo-filmstrip{ width:8rem; } }
 .logo-filmstrip--left{ border-radius:1.5rem 0 0 1.5rem; }
@@ -761,8 +764,8 @@ body.modal-locked .cart-bar-wrap{ display:block; }
 }
 @media (min-width:768px){ .logo-filmstrip-track img{ width:8rem; } }
 @media (prefers-reduced-motion: no-preference){
-  .logo-filmstrip-track--left{ animation:filmstripLeft 24s linear infinite; }
-  .logo-filmstrip-track--right{ animation:filmstripRight 24s linear infinite; }
+  .logo-filmstrip-track--left{ animation:filmstripLeft 11s linear infinite; }
+  .logo-filmstrip-track--right{ animation:filmstripRight 11s linear infinite; }
   @keyframes filmstripLeft{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
   @keyframes filmstripRight{ from{ transform:translateX(-50%); } to{ transform:translateX(0); } }
 }
