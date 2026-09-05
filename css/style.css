@@ -741,11 +741,11 @@ body.modal-locked .cart-bar-wrap{ display:block; }
 
 /* Filmstrips either side of the logo — small kabinet photos slowly sliding through */
 .logo-filmstrip{
-  width:3.5rem;
+  width:6rem;
   overflow:hidden;
   position:relative;
 }
-@media (min-width:768px){ .logo-filmstrip{ width:4.5rem; } }
+@media (min-width:768px){ .logo-filmstrip{ width:8rem; } }
 .logo-filmstrip--left{ border-radius:1.5rem 0 0 1.5rem; }
 .logo-filmstrip--right{ border-radius:0 1.5rem 1.5rem 0; }
 .logo-filmstrip-track{
@@ -753,13 +753,13 @@ body.modal-locked .cart-bar-wrap{ display:block; }
   height:100%;
 }
 .logo-filmstrip-track img{
-  width:3.5rem;
+  width:6rem;
   height:100%;
   object-fit:cover;
   flex-shrink:0;
   filter:saturate(1.1) brightness(.85);
 }
-@media (min-width:768px){ .logo-filmstrip-track img{ width:4.5rem; } }
+@media (min-width:768px){ .logo-filmstrip-track img{ width:8rem; } }
 @media (prefers-reduced-motion: no-preference){
   .logo-filmstrip-track--left{ animation:filmstripLeft 24s linear infinite; }
   .logo-filmstrip-track--right{ animation:filmstripRight 24s linear infinite; }
