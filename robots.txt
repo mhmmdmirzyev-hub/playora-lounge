@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://playoralounge.pages.dev/sitemap.xml
+Sitemap: https://playora-lounge.pages.dev/sitemap.xml
