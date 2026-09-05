@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Playora Lounge &amp; Game Center | PlayStation, Menyu &amp; Qəlyan</title>
+<meta name="description" content="Playora Lounge &amp; Game Center — Bakıda PlayStation gaming lounge. Zəngin fast food, pizza və qəlyan menyusu, ad günü və dost setləri, rahat kabinetlər. Yeni Yasamal, Bakı.">
+<meta name="theme-color" content="#0a0a12" id="theme-color-meta">
+<link rel="canonical" href="https://playoralounge.pages.dev/">
+<link rel="icon" href="images/logo/playora-logo.jpg">
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="business.business">
+<meta property="og:site_name" content="Playora Lounge & Game Center">
+<meta property="og:title" content="Playora Lounge & Game Center | PlayStation, Menyu & Qəlyan">
+<meta property="og:description" content="Bakıda PlayStation gaming lounge — zəngin fast food, pizza və qəlyan menyusu, ad günü və dost setləri, rahat kabinetlər.">
+<meta property="og:image" content="https://playoralounge.pages.dev/images/logo/playora-logo.jpg">
+<meta property="og:url" content="https://playoralounge.pages.dev/">
+<meta property="og:locale" content="az_AZ">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Playora Lounge & Game Center">
+<meta name="twitter:description" content="Bakıda PlayStation gaming lounge — zəngin menyu, ad günü və dost setləri, rahat kabinetlər.">
+<meta name="twitter:image" content="https://playoralounge.pages.dev/images/logo/playora-logo.jpg">
+
+<!-- Structured data for local search -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["EntertainmentBusiness"],
+  "name": "Playora Lounge & Game Center",
+  "image": "https://playoralounge.pages.dev/images/logo/playora-logo.jpg",
+  "url": "https://playoralounge.pages.dev/",
+  "telephone": "+994771006080",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Yeni Yasamal 2, 6 (336 nömrəli məktəbin yanı)",
+    "addressLocality": "Bakı",
+    "addressCountry": "AZ"
+  }
+}
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.2/src/bold/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.2/src/duotone/style.css">
+
+<!-- Tailwind (pre-built static CSS) -->
+<link rel="stylesheet" href="css/tailwind.css?v=1">
+
+<link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body class="font-body">
+
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-blue-400 focus:text-ink-900 focus:px-4 focus:py-2 focus:rounded-lg focus:font-semibold">Əsas məzmuna keç</a>
+
+<!-- ================= NAV ================= -->
+<header id="site-nav" class="fixed top-0 inset-x-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-20">
+    <a href="#home" class="flex items-center gap-3 tap-target" aria-label="Playora Lounge — Ana səhifə">
+      <img src="images/logo/playora-logo.jpg" alt="Playora" class="logo-mark w-11 h-11 rounded-xl object-cover shrink-0">
+      <span class="font-display leading-none">
+        <span class="block text-lg text-white tracking-wide">PLAY<span class="text-violet-400">ORA</span></span>
+        <span class="block text-[10px] tracking-[0.25em] text-blue-300 font-body font-semibold">LOUNGE &amp; GAME CENTER</span>
+      </span>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-200">
+      <a href="#home" class="hover:text-blue-300 transition-colors">Ana Səhifə</a>
+      <button type="button" data-open-modal="menu" class="hover:text-blue-300 transition-colors">Menyu</button>
+      <button type="button" data-open-modal="sets" class="hover:text-blue-300 transition-colors">Setlər</button>
+      <button type="button" data-open-modal="atmosfer" class="hover:text-blue-300 transition-colors">Atmosfer</button>
+      <a href="#contact" class="hover:text-blue-300 transition-colors">Əlaqə</a>
+    </nav>
+
+    <div class="hidden md:flex items-center gap-3">
+      <a href="tel:+994771006080" class="btn-ghost tap-target rounded-full px-4 py-2.5 text-sm font-semibold text-white inline-flex items-center gap-2">
+        <i class="ph-bold ph-phone"></i> 077 100 60 80
+      </a>
+      <a href="#" data-wa="Salam! Rezervasiya etmək istəyirəm." class="btn-whatsapp tap-target rounded-full px-4 py-2.5 text-sm font-bold inline-flex items-center gap-2">
+        <i class="ph-bold ph-whatsapp-logo"></i> Rezervasiya
+      </a>
+    </div>
+
+    <button id="theme-toggle" aria-label="Tema dəyiş" class="theme-toggle-btn theme-toggle-trigger tap-target grid place-items-center text-lg ml-1">
+      <i class="ph-bold ph-sun theme-toggle-icon-el"></i>
+    </button>
+
+    <button id="burger-btn" aria-label="Menyunu aç" aria-expanded="false" class="lg:hidden tap-target grid place-items-center text-white text-2xl">
+      <i class="ph-bold ph-list"></i>
+    </button>
+  </div>
+
+  <nav class="lg:hidden flex items-center gap-x-2 overflow-x-auto scrollbar-none whitespace-nowrap px-4 py-2 text-xs font-semibold text-slate-300 border-t border-white/5">
+    <button type="button" data-open-modal="menu" class="nav-chip shrink-0 hover:text-blue-300 transition-colors">Menyu</button>
+    <button type="button" data-open-modal="sets" class="nav-chip shrink-0 hover:text-blue-300 transition-colors">Setlər</button>
+    <button type="button" data-open-modal="atmosfer" class="nav-chip shrink-0 hover:text-blue-300 transition-colors">Atmosfer</button>
+    <a href="#contact" class="nav-chip shrink-0 hover:text-blue-300 transition-colors">Əlaqə</a>
+  </nav>
+
+  <div id="mobile-menu" class="lg:hidden bg-ink-900/98 backdrop-blur border-t border-white/10">
+    <nav class="flex flex-col px-6 py-4 gap-1 text-slate-200 font-medium">
+      <a href="#home" class="tap-target flex items-center py-3 border-b border-white/5">Ana Səhifə</a>
+      <button type="button" data-open-modal="menu" class="tap-target flex items-center py-3 border-b border-white/5 w-full text-left">Menyu</button>
+      <button type="button" data-open-modal="sets" class="tap-target flex items-center py-3 border-b border-white/5 w-full text-left">Setlər</button>
+      <button type="button" data-open-modal="atmosfer" class="tap-target flex items-center py-3 border-b border-white/5 w-full text-left">Atmosfer</button>
+      <a href="#contact" class="tap-target flex items-center py-3">Əlaqə</a>
+      <div class="flex gap-3 mt-3">
+        <a href="tel:+994771006080" class="btn-ghost tap-target flex-1 rounded-full py-3 text-sm font-semibold text-white inline-flex items-center justify-center gap-2"><i class="ph-bold ph-phone"></i> Zəng et</a>
+        <a href="#" data-wa="Salam! Rezervasiya etmək istəyirəm." class="btn-whatsapp tap-target flex-1 rounded-full py-3 text-sm font-bold inline-flex items-center justify-center gap-2"><i class="ph-bold ph-whatsapp-logo"></i> WhatsApp</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section id="home" class="relative bg-ink-900 bg-noise hero-grid overflow-hidden pt-40 pb-20 lg:pt-44 md:pb-28">
+    <div class="hero-photo-bg" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 -left-24 w-80 h-80 bg-violet-500/15 rounded-full blur-3xl"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 md:px-8">
+      <div id="hero-eyebrow" class="reveal inline-flex items-center gap-2 rounded-full border border-blue-400/30 bg-blue-400/10 px-4 py-1.5 text-xs font-semibold tracking-wide text-blue-300 mb-8">
+        <i class="ph-bold ph-sparkle"></i> BAKININ PLAYSTATION LOUNGE-U
+      </div>
+
+      <div class="grid lg:grid-cols-[auto_1fr] gap-10 lg:gap-16 items-center">
+        <!-- Logo mark -->
+        <div class="flex justify-center lg:justify-start">
+          <img src="images/logo/playora-logo.jpg" alt="Playora Lounge & Game Center" class="logo-mark w-40 h-40 md:w-52 md:h-52 rounded-3xl object-cover">
+        </div>
+
+        <!-- Title + features -->
+        <div>
+          <h1 id="hero-title" class="reveal font-display text-4xl sm:text-5xl md:text-6xl leading-[1.05] text-white">
+            Oyunun və <span class="text-gradient">Əyləncənin</span> ünvanı!
+          </h1>
+          <p id="hero-sub" class="reveal mt-5 max-w-xl text-slate-300 text-base md:text-lg leading-relaxed">
+            Playora Lounge &amp; Game Center — PlayStation zonaları, rahat kabinetlər, zəngin fast food &amp; pizza
+            menyusu və dadlı qəlyan bir məkanda. Dostlarınla, ad günündə və ya sadəcə oyun keyfindən çıxmaq üçün.
+          </p>
+
+          <div id="hero-ctas" class="reveal mt-7 flex flex-wrap gap-4">
+            <button type="button" data-open-modal="menu" class="btn-hero-primary tap-target rounded-full px-7 py-4 text-base font-bold inline-flex items-center gap-2">
+              <i class="ph-bold ph-fork-knife text-lg"></i> Menyuya bax
+            </button>
+            <button type="button" data-open-modal="sets" class="btn-hero-violet tap-target rounded-full px-7 py-4 text-base font-bold inline-flex items-center gap-2">
+              <i class="ph-bold ph-gift text-lg"></i> Setlərə bax
+            </button>
+            <button type="button" data-open-modal="atmosfer" class="btn-hero-outline tap-target rounded-full px-7 py-4 text-base font-bold inline-flex items-center gap-2">
+              <i class="ph-bold ph-door-open text-lg"></i> Atmosferə bax
+            </button>
+          </div>
+
+          <ul id="hero-features" class="mt-7 grid sm:grid-cols-3 gap-3 max-w-2xl">
+            <li class="reveal card-elevated rounded-2xl px-4 py-3.5 flex items-center gap-3">
+              <i class="ph-duotone ph-game-controller text-2xl text-violet-400 shrink-0"></i>
+              <span class="text-sm text-slate-100 leading-snug">PlayStation gaming zonaları</span>
+            </li>
+            <li class="reveal card-elevated rounded-2xl px-4 py-3.5 flex items-center gap-3">
+              <i class="ph-duotone ph-cake text-2xl text-blue-300 shrink-0"></i>
+              <span class="text-sm text-slate-100 leading-snug">Ad günü və dost setləri</span>
+            </li>
+            <li class="reveal card-elevated rounded-2xl px-4 py-3.5 flex items-center gap-3">
+              <i class="ph-duotone ph-cloud text-2xl text-violet-400 shrink-0"></i>
+              <span class="text-sm text-slate-100 leading-snug">Zəngin qəlyan seçimi</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MENU ================= -->
+  <section id="menu" class="relative bg-menu-dark py-6 md:py-10">
+    <div class="modal-header-controls">
+      <button type="button" class="modal-theme-toggle theme-toggle-trigger tap-target" aria-label="Tema dəyiş">
+        <i class="ph-bold ph-sun theme-toggle-icon-el"></i>
+      </button>
+      <button type="button" class="modal-close-btn tap-target" aria-label="Bağla" data-close-modal>
+        <i class="ph-bold ph-x"></i>
+      </button>
+    </div>
+    <div class="max-w-5xl mx-auto px-4 md:px-8">
+      <div id="menu-sticky-header" class="bg-menu-dark sticky top-0 z-10 pb-4">
+        <div class="flex items-center gap-2 mb-1 reveal-on-scroll">
+          <div class="w-9 h-9 rounded-full bg-violet-500 grid place-items-center shrink-0">
+            <i class="ph-bold ph-fork-knife text-white text-sm"></i>
+          </div>
+          <h2 class="font-display text-2xl md:text-3xl text-ink-900">Playora Menyu</h2>
+        </div>
+        <p class="text-ink-900/60 text-xs md:text-sm mb-4 reveal-on-scroll">Fast food-dan qəlyana qədər — hər zövqə uyğun zəngin seçim.</p>
+
+        <div class="flex items-center gap-2">
+          <button type="button" id="menu-tabs-prev" aria-label="Əvvəlki kateqoriyalar" class="menu-tabs-nav-btn grid tap-target place-items-center w-8 h-8 rounded-full shrink-0">
+            <i class="ph-bold ph-caret-left"></i>
+          </button>
+          <div id="menu-tabs" class="reveal-on-scroll flex-1 min-w-0 flex gap-2 overflow-x-auto scrollbar-none whitespace-nowrap"></div>
+          <button type="button" id="menu-tabs-next" aria-label="Növbəti kateqoriyalar" class="menu-tabs-nav-btn grid tap-target place-items-center w-8 h-8 rounded-full shrink-0">
+            <i class="ph-bold ph-caret-right"></i>
+          </button>
+        </div>
+        <div class="flex justify-end mt-2">
+          <div class="shrink-0 flex items-center gap-1 bg-white border border-black/10 rounded-full p-0.5">
+            <button type="button" id="menu-view-list" aria-label="Siyahı görünüşü" class="view-toggle-btn grid place-items-center w-6 h-6 rounded-full text-xs">
+              <i class="ph-bold ph-list"></i>
+            </button>
+            <button type="button" id="menu-view-grid" aria-label="Grid görünüşü" class="view-toggle-btn grid place-items-center w-6 h-6 rounded-full text-xs">
+              <i class="ph-bold ph-squares-four"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="menu-grid" class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 mt-5" data-view="grid"></div>
+      <div class="h-6"></div>
+    </div>
+  </section>
+
+  <!-- ================= SETLƏR (SETLƏR) ================= -->
+  <section id="sets" class="relative bg-ink-900 neon-floor py-16 md:py-24">
+    <div class="modal-header-controls">
+      <button type="button" class="modal-theme-toggle theme-toggle-trigger tap-target" aria-label="Tema dəyiş">
+        <i class="ph-bold ph-sun theme-toggle-icon-el"></i>
+      </button>
+      <button type="button" class="modal-close-btn tap-target" aria-label="Bağla" data-close-modal>
+        <i class="ph-bold ph-x"></i>
+      </button>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-10 reveal-on-scroll">
+        <span class="inline-flex items-center gap-2 rounded-full bg-violet-400/10 border border-violet-400/30 px-4 py-1.5 text-xs font-bold tracking-wide text-violet-400 mb-4">
+          <i class="ph-bold ph-gift"></i> SETLƏR
+        </span>
+        <h2 class="font-display text-3xl md:text-5xl text-white">Ad Günü, Dostlar və Şirkətlər üçün Setlər</h2>
+        <p class="mt-3 text-slate-400 text-sm md:text-base">Kabinet saatları daxil olmaqla hazır paketlər — sifariş üçün WhatsApp yazın.</p>
+      </div>
+
+      <div id="set-tabs" class="reveal-on-scroll flex gap-2.5 overflow-x-auto scrollbar-none pb-2 mb-8 -mx-4 px-4"></div>
+
+      <div id="set-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+    </div>
+  </section>
+
+  <!-- ================= ATMOSFER (INTERIOR GALLERY) ================= -->
+  <section id="atmosfer" class="relative bg-ink-950 py-16 md:py-24 overflow-hidden">
+    <div class="modal-header-controls">
+      <button type="button" class="modal-theme-toggle theme-toggle-trigger tap-target" aria-label="Tema dəyiş">
+        <i class="ph-bold ph-sun theme-toggle-icon-el"></i>
+      </button>
+      <button type="button" class="modal-close-btn tap-target" aria-label="Bağla" data-close-modal>
+        <i class="ph-bold ph-x"></i>
+      </button>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-10 reveal-on-scroll">
+        <span class="inline-flex items-center gap-2 rounded-full bg-blue-400/10 border border-blue-400/30 px-4 py-1.5 text-xs font-bold tracking-wide text-blue-300 mb-4">
+          <i class="ph-bold ph-door-open"></i> ATMOSFER
+        </span>
+        <h2 class="font-display text-3xl md:text-5xl text-white">Hər Otağın Öz Xarakteri Var</h2>
+        <p class="mt-3 text-slate-400 text-sm md:text-base">Klub temalı kabinetlərdən neon lounge-a qədər — özünə uyğun guşəni seç.</p>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
+        <div class="interior-card interior-card--red reveal-on-scroll">
+          <img src="images/venue/room-barcelona.jpg" alt="Barcelona temalı kabinet — qırmızı-göy dizayn, böyük ekran" loading="lazy">
+          <div class="interior-card-label">
+            <span>Barcelona</span>
+            <small>Klub Temalı Kabinet</small>
+          </div>
+        </div>
+        <div class="interior-card interior-card--red reveal-on-scroll">
+          <img src="images/venue/room-vip-red.jpg" alt="VIP qırmızı kabinet — məxmər divan, uzun pərdələr" loading="lazy">
+          <div class="interior-card-label">
+            <span>VIP Red</span>
+            <small>Lüks Guşə</small>
+          </div>
+        </div>
+        <div class="interior-card interior-card--gold reveal-on-scroll">
+          <img src="images/venue/room-fenerbahce.jpg" alt="Fənərbağça temalı kabinet — sarı-göy dizayn" loading="lazy">
+          <div class="interior-card-label">
+            <span>Fənərbağça</span>
+            <small>Klub Temalı Kabinet</small>
+          </div>
+        </div>
+        <div class="interior-card interior-card--teal reveal-on-scroll">
+          <img src="images/venue/room-blur.jpg" alt="Blur adlı neon lounge otağı — turkuaz işıqlandırma" loading="lazy">
+          <div class="interior-card-label">
+            <span>Blur</span>
+            <small>Neon Lounge</small>
+          </div>
+        </div>
+        <div class="interior-card interior-card--emerald reveal-on-scroll">
+          <img src="images/venue/room-dark-emerald.jpg" alt="Tünd zümrüd kabinet — məxmər divan, böyük ekran" loading="lazy">
+          <div class="interior-card-label">
+            <span>Emerald</span>
+            <small>Dark Lounge</small>
+          </div>
+        </div>
+        <div class="interior-card interior-card--amber reveal-on-scroll">
+          <img src="images/venue/room-wood.jpg" alt="Ağac panelli geniş kabinet — böyük divan dəsti" loading="lazy">
+          <div class="interior-card-label">
+            <span>Wood Lounge</span>
+            <small>Geniş Guşə</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="relative bg-ink-950 py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12 reveal-on-scroll">
+        <span class="inline-flex items-center gap-2 rounded-full bg-blue-400/10 border border-blue-400/30 px-4 py-1.5 text-xs font-bold tracking-wide text-blue-300 mb-4">
+          <i class="ph-bold ph-map-pin"></i> ƏLAQƏ
+        </span>
+        <h2 class="font-display text-3xl md:text-5xl text-white">Bizi Ziyarət Edin</h2>
+        <p class="mt-3 text-slate-400 text-sm md:text-base">Rezervasiya üçün WhatsApp yazın və ya zəng edin.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8 items-stretch">
+        <div class="card-elevated rounded-3xl p-6 md:p-8 reveal-on-scroll flex flex-col gap-5">
+          <div class="flex items-start gap-4">
+            <div class="menu-icon-circle w-12 h-12 rounded-full grid place-items-center shrink-0"><i class="ph-bold ph-map-pin text-white text-xl"></i></div>
+            <div>
+              <p class="font-semibold text-white">Ünvan</p>
+              <p class="text-slate-400 text-sm mt-0.5">Yeni Yasamal 2, 6 (336 nömrəli məktəbin yanı), Bakı, Azərbaycan</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="menu-icon-circle w-12 h-12 rounded-full grid place-items-center shrink-0"><i class="ph-bold ph-phone text-white text-xl"></i></div>
+            <div>
+              <p class="font-semibold text-white">Telefon / WhatsApp</p>
+              <p class="text-slate-400 text-sm mt-0.5">
+                <a href="tel:+994771006080" class="hover:text-blue-300 tap-target">+994 77 100 60 80</a>
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="menu-icon-circle w-12 h-12 rounded-full grid place-items-center shrink-0"><i class="ph-bold ph-clock-afternoon text-white text-xl"></i></div>
+            <div>
+              <p class="font-semibold text-white">İş saatları</p>
+              <p class="text-slate-400 text-sm mt-0.5">Hər gün 12:00 – 00:00 <span class="text-slate-500">(dəqiqləşdirilməli)</span></p>
+            </div>
+          </div>
+
+          <div class="flex gap-3 mt-2">
+            <a href="#" data-wa="Salam! Rezervasiya etmək istəyirəm." class="btn-whatsapp tap-target flex-1 rounded-full py-3.5 text-sm font-bold inline-flex items-center justify-center gap-2">
+              <i class="ph-bold ph-whatsapp-logo"></i> WhatsApp
+            </a>
+            <a href="tel:+994771006080" class="btn-violet tap-target flex-1 rounded-full py-3.5 text-sm font-bold inline-flex items-center justify-center gap-2">
+              <i class="ph-bold ph-phone"></i> Zəng et
+            </a>
+          </div>
+        </div>
+
+        <div class="reveal-on-scroll rounded-3xl overflow-hidden border border-white/10 min-h-[320px]">
+          <iframe
+            title="Playora Lounge & Game Center xəritədə"
+            src="https://www.google.com/maps?q=Yeni+Yasamal+2+6,+Baku,+Azerbaijan&output=embed"
+            class="w-full h-full min-h-[320px]"
+            style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-ink-950 border-t border-white/5 py-10">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+    <a href="#home" class="flex items-center gap-3">
+      <img src="images/logo/playora-logo.jpg" alt="Playora" class="w-9 h-9 rounded-lg object-cover">
+      <span class="font-display text-sm text-white tracking-wide">PLAY<span class="text-violet-400">ORA</span> <span class="text-blue-300">LOUNGE</span></span>
+    </a>
+
+    <nav class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-slate-400">
+      <button type="button" data-open-modal="menu" class="hover:text-blue-300">Menyu</button>
+      <button type="button" data-open-modal="sets" class="hover:text-blue-300">Setlər</button>
+      <button type="button" data-open-modal="atmosfer" class="hover:text-blue-300">Atmosfer</button>
+      <a href="#contact" class="hover:text-blue-300">Əlaqə</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href="#" data-wa="Salam! Rezervasiya etmək istəyirəm." aria-label="WhatsApp" class="tap-target grid place-items-center w-11 h-11 rounded-full bg-white/5 border border-white/10 text-white hover:text-blue-300 hover:border-blue-300/40 transition-colors">
+        <i class="ph-bold ph-whatsapp-logo text-lg"></i>
+      </a>
+    </div>
+  </div>
+  <div class="divider-glow max-w-7xl mx-auto mt-8"></div>
+  <p class="text-center text-xs text-slate-500 mt-6">© <span id="year"></span> Playora Lounge &amp; Game Center · Bütün hüquqlar qorunur.</p>
+</footer>
+
+<!-- ================= CART BAR (global, works inside Menu & Setlər) ================= -->
+<div class="cart-bar-wrap fixed bottom-0 inset-x-0 px-4 md:px-8 pb-4 pointer-events-none">
+  <div class="max-w-5xl mx-auto">
+    <button type="button" id="cart-bar" class="cart-bar hidden pointer-events-auto" aria-label="Sifarişə bax">
+      <span id="cart-bar-count" class="cart-bar-count">0</span>
+      <span class="flex-1 text-left">Sifarişə bax</span>
+      <span id="cart-bar-total"></span>
+    </button>
+  </div>
+</div>
+
+<!-- ================= MENU ITEM DETAIL SHEET ================= -->
+<div id="item-sheet-backdrop" class="item-sheet-backdrop"></div>
+<div id="item-sheet" class="item-sheet" role="dialog" aria-modal="true">
+  <div class="item-sheet-handle" aria-hidden="true"></div>
+  <div class="max-h-[85vh] overflow-y-auto">
+    <div id="item-sheet-photo" class="item-sheet-photo"></div>
+    <div class="p-5">
+      <h3 id="item-sheet-name" class="font-display text-2xl text-ink-900"></h3>
+      <p id="item-sheet-desc" class="text-sm text-slate-500 mt-2 leading-relaxed"></p>
+
+      <div class="bg-slate-100 rounded-2xl p-4 mt-4 flex justify-end">
+        <span id="item-sheet-price" class="menu-price font-bold text-xl"></span>
+      </div>
+
+      <div class="flex items-center gap-3 mt-5">
+        <div class="flex items-center gap-3 border border-black/10 rounded-full px-2 py-1.5 shrink-0">
+          <button type="button" id="item-sheet-minus" aria-label="Azalt" class="tap-target grid place-items-center w-8 h-8 rounded-full border border-black/10 text-ink-900"><i class="ph-bold ph-minus"></i></button>
+          <span id="item-sheet-qty" class="w-6 text-center font-semibold text-ink-900">1</span>
+          <button type="button" id="item-sheet-plus" aria-label="Artır" class="tap-target grid place-items-center w-8 h-8 rounded-full border border-black/10 text-ink-900"><i class="ph-bold ph-plus"></i></button>
+        </div>
+        <a href="#" id="item-sheet-order-btn" class="btn-whatsapp tap-target flex-1 rounded-full font-semibold text-sm py-3.5 inline-flex items-center justify-center gap-2"><i class="ph-bold ph-whatsapp-logo"></i> Sifariş et</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CART SHEET ================= -->
+<div id="cart-sheet-backdrop" class="item-sheet-backdrop"></div>
+<div id="cart-sheet" class="item-sheet" role="dialog" aria-modal="true">
+  <div class="item-sheet-handle" aria-hidden="true"></div>
+  <div class="max-h-[85vh] overflow-y-auto">
+    <div class="px-5 pt-2 pb-4 flex items-center justify-between">
+      <h3 class="font-display text-2xl text-ink-900">Sifarişiniz</h3>
+      <button type="button" id="cart-sheet-close" aria-label="Bağla" class="tap-target grid place-items-center w-9 h-9 rounded-full border border-black/10 text-ink-900"><i class="ph-bold ph-x"></i></button>
+    </div>
+    <div id="cart-sheet-list" class="px-5 flex flex-col gap-3"></div>
+    <div class="px-5 mt-4 pb-5">
+      <div class="bg-slate-100 rounded-2xl p-4 flex items-center justify-between">
+        <span class="font-semibold text-ink-900">Cəmi</span>
+        <span id="cart-sheet-total" class="menu-price font-bold text-xl"></span>
+      </div>
+      <a href="#" id="cart-sheet-order-btn" class="btn-whatsapp tap-target w-full rounded-full font-semibold text-sm py-3.5 inline-flex items-center justify-center gap-2 mt-4"><i class="ph-bold ph-whatsapp-logo"></i> Sifarişi tamamla</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= SET DETAIL SHEET ================= -->
+<div id="set-sheet-backdrop" class="item-sheet-backdrop"></div>
+<div id="set-sheet" class="item-sheet" role="dialog" aria-modal="true">
+  <div class="item-sheet-handle" aria-hidden="true"></div>
+  <div class="max-h-[85vh] overflow-y-auto">
+    <div id="set-sheet-hero" class="set-sheet-hero">
+      <span class="set-sheet-hero-zoom-hint" aria-hidden="true"><i class="ph-bold ph-magnifying-glass-plus"></i></span>
+      <div class="set-sheet-hero-card">
+        <div id="set-sheet-icon" class="set-sheet-icon"><i class="ph-bold ph-gift"></i></div>
+        <h3 id="set-sheet-title" class="set-sheet-title"></h3>
+        <p id="set-sheet-group" class="set-sheet-group"></p>
+      </div>
+    </div>
+    <div class="p-5">
+      <h4 class="set-sheet-section-label">Tərkibi</h4>
+      <ul id="set-sheet-items" class="set-sheet-items"></ul>
+      <div id="set-sheet-extra" class="set-sheet-extra"></div>
+
+      <div class="bg-slate-100 rounded-2xl p-4 mt-5 flex items-center justify-between">
+        <span class="text-sm text-slate-500 font-semibold">Qiymət</span>
+        <span id="set-sheet-price" class="menu-price font-bold text-xl"></span>
+      </div>
+
+      <div class="flex items-center gap-3 mt-5">
+        <div class="flex items-center gap-3 border border-black/10 rounded-full px-2 py-1.5 shrink-0">
+          <button type="button" id="set-sheet-minus" aria-label="Azalt" class="tap-target grid place-items-center w-8 h-8 rounded-full border border-black/10 text-ink-900"><i class="ph-bold ph-minus"></i></button>
+          <span id="set-sheet-qty" class="w-6 text-center font-semibold text-ink-900">1</span>
+          <button type="button" id="set-sheet-plus" aria-label="Artır" class="tap-target grid place-items-center w-8 h-8 rounded-full border border-black/10 text-ink-900"><i class="ph-bold ph-plus"></i></button>
+        </div>
+        <button type="button" id="set-sheet-add-btn" class="set-add-cart-btn tap-target flex-1 rounded-full font-semibold text-sm py-3.5 inline-flex items-center justify-center gap-2"><i class="ph-bold ph-shopping-cart-simple"></i> Səbətə əlavə et</button>
+      </div>
+      <a href="#" id="set-sheet-order-btn" class="btn-whatsapp tap-target w-full rounded-full font-semibold text-sm py-3.5 inline-flex items-center justify-center gap-2 mt-3"><i class="ph-bold ph-whatsapp-logo"></i> Birbaşa sifariş et</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= PHOTO LIGHTBOX (Atmosfer şəkilləri) ================= -->
+<div id="lightbox-backdrop" class="lightbox-backdrop"></div>
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Şəkil">
+  <button type="button" id="lightbox-close" aria-label="Bağla" class="lightbox-close tap-target"><i class="ph-bold ph-x"></i></button>
+  <figure class="lightbox-figure">
+    <img id="lightbox-img" src="" alt="">
+    <figcaption id="lightbox-caption"></figcaption>
+  </figure>
+</div>
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script src="js/data.js?v=1"></script>
+<script src="js/main.js?v=1"></script>
+</body>
+</html>

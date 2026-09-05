@@ -1,0 +1,17 @@
+{
+  "name": "playora-lounge",
+  "version": "1.0.0",
+  "description": "Playora Lounge & Game Center — rəsmi sayt",
+  "main": "index.html",
+  "scripts": {
+    "build:css": "tailwindcss -i ./css/tailwind-src.css -o ./css/tailwind.css --minify",
+    "watch:css": "tailwindcss -i ./css/tailwind-src.css -o ./css/tailwind.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}

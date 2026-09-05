@@ -1,0 +1,6 @@
+# Local Netlify/Cloudflare folders
+.netlify
+.wrangler/
+
+# Build tooling (Tailwind CSS is compiled locally into css/tailwind.css, which IS committed)
+node_modules/
