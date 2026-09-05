@@ -711,7 +711,33 @@ body.modal-locked .cart-bar-wrap{ display:block; }
 }
 .hero-blob-c{ display:none; }
 .hero-particles{ display:none; }
-.logo-mark-wrap::before{ content:none; }
+
+/* Thin glowing edge around the logo — stays in place, just sparkles/pulses */
+.logo-mark-wrap{
+  position:relative;
+  border-radius:1.5rem;
+  isolation:isolate;
+}
+.logo-mark-wrap::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  padding:2.5px;
+  background:conic-gradient(from 0deg,
+    var(--cyan-400), var(--blue-400), var(--violet-400), var(--pink-500), var(--cyan-400));
+  -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;
+  mask-composite:exclude;
+  pointer-events:none;
+}
+@media (prefers-reduced-motion: no-preference){
+  .logo-mark-wrap::before{ animation:logoEdgeSparkle 2.4s ease-in-out infinite; }
+  @keyframes logoEdgeSparkle{
+    0%,100%{ opacity:.55; filter:brightness(1); }
+    50%{ opacity:1; filter:brightness(1.4); }
+  }
+}
 
 /* ---------- Hero entrance (pure CSS, zero JS/CDN dependency) ---------- */
 @media (prefers-reduced-motion: no-preference){
@@ -733,6 +759,8 @@ body.modal-locked .cart-bar-wrap{ display:block; }
 
 /* ---------- Logo mark ---------- */
 .logo-mark{
+  position:relative;
+  z-index:1;
   filter:drop-shadow(0 0 14px rgba(139,92,246,.45)) drop-shadow(0 0 6px rgba(59,130,246,.35));
 }
 
